@@ -3,7 +3,7 @@ Gioco "Uno" sviluppato in Java utilizzando il pattern Model-View-Controller (MVC
 
 Pattern MVC con l'uso di Observer-Observable
 Il pattern Model-View-Controller (MVC) viene adattato usando il pattern Observer-Observable per migliorare la separazione dei ruoli e ridurre le dipendenze dirette tra il Model e la View. Questo approccio è una scelta valida e scalabile per progetti in cui il modello deve notificare cambiamenti alle viste senza conoscerne i dettagli.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+____________________________________________________________________________________________________________________________________________________________________________________________
 
 Model (Logica del Gioco - Observable)
 
