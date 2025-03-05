@@ -3,7 +3,7 @@ Gioco "Uno" sviluppato in Java utilizzando il pattern Model-View-Controller (MVC
 
 Pattern MVC con l'uso di Observer-Observable
 Il pattern Model-View-Controller (MVC) viene adattato usando il pattern Observer-Observable per migliorare la separazione dei ruoli e ridurre le dipendenze dirette tra il Model e la View. Questo approccio è una scelta valida e scalabile per progetti in cui il modello deve notificare cambiamenti alle viste senza conoscerne i dettagli.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Model (Logica del Gioco - Observable)
 
@@ -14,7 +14,7 @@ Questo meccanismo consente di notificare tutte le View registrate senza che il M
 Esempio pratico nel progetto:
 Classi come Game, GameClassic, Player, e PlayerAI si occupano di gestire gli elementi fondamentali della logica del gioco (es. turni, punteggi, decisioni AI).
 Quando, ad esempio, il punteggio di un giocatore cambia, il Model chiama setChanged() seguito da notifyObservers().
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 View (Interfaccia Grafica - Observer)
 
@@ -25,7 +25,7 @@ Quando il Model cambia, la View viene notificata tramite il metodo update(Observ
 Questo approccio evita che il Model abbia responsabilità di aggiornare direttamente la grafica, rispettando così il principio di Single Responsibility.
 Struttura delle viste nel progetto:
 La View è composta da diversi pannelli grafici (JPanel) che organizzano l'interfaccia utente (es. tabella di gioco, barra dei punteggi, messaggi di stato). Ogni pannello è progettato per rispondere ai cambiamenti nel Model.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Controller (Gestore degli Input)
    
